@@ -6,16 +6,14 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Soldering Station 907"
-Date "2019-07-24"
+Date "2019-07-25"
 Rev "v0.0.1"
 Comp "Mithat Konar"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "derived from https://github.com/sfrwmaker/soldering_907_lcd"
+Comment4 "https://github.com/mithat/soldering-station-907-hw"
 $EndDescr
-Text Notes 14550 10100 0    40   ~ 0
-Derived from https://github.com/sfrwmaker/soldering_907_lcd
 $Comp
 L local:Arduino_Nano_v3.x A1
 U 1 1 5D374319
@@ -57,12 +55,12 @@ $EndComp
 $Comp
 L power:GNDD #PWR025
 U 1 1 5D374F69
-P 13200 6550
-F 0 "#PWR025" H 13200 6300 50  0001 C CNN
-F 1 "GNDD" H 13204 6395 50  0000 C CNN
-F 2 "" H 13200 6550 50  0001 C CNN
-F 3 "" H 13200 6550 50  0001 C CNN
-	1    13200 6550
+P 13100 6550
+F 0 "#PWR025" H 13100 6300 50  0001 C CNN
+F 1 "GNDD" H 13104 6395 50  0000 C CNN
+F 2 "" H 13100 6550 50  0001 C CNN
+F 3 "" H 13100 6550 50  0001 C CNN
+	1    13100 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -78,55 +76,35 @@ Wire Wire Line
 Wire Wire Line
 	13350 6600 13550 6600
 Wire Wire Line
-	13550 6500 13200 6500
+	13550 6500 13100 6500
 Wire Wire Line
-	13200 6500 13200 6550
+	13100 6500 13100 6550
 $Comp
 L Device:C C6
 U 1 1 5D377544
-P 12800 6300
-F 0 "C6" H 12915 6346 50  0000 L CNN
-F 1 "0.1u" H 12915 6255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 12838 6150 50  0001 C CNN
-F 3 "" H 12800 6300 50  0001 C CNN
-F 4 "Vishay  K104K15X7RF5TL2" H 12800 6300 50  0001 C CNN "P/N"
-	1    12800 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12800 6150 12800 6100
-$Comp
-L power:GNDD #PWR022
-U 1 1 5D3777F5
-P 12550 6550
-F 0 "#PWR022" H 12550 6300 50  0001 C CNN
-F 1 "GNDD" H 12554 6395 50  0000 C CNN
-F 2 "" H 12550 6550 50  0001 C CNN
-F 3 "" H 12550 6550 50  0001 C CNN
-	1    12550 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12800 6450 12800 6500
-Wire Wire Line
-	12800 6500 12550 6500
-Wire Wire Line
-	12550 6500 12550 6550
-$Comp
-L Device:C C7
-U 1 1 5D377B4E
 P 12800 6700
-F 0 "C7" H 12915 6746 50  0000 L CNN
+F 0 "C6" H 12915 6746 50  0000 L CNN
 F 1 "0.1u" H 12915 6655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 12838 6550 50  0001 C CNN
 F 3 "" H 12800 6700 50  0001 C CNN
 F 4 "Vishay  K104K15X7RF5TL2" H 12800 6700 50  0001 C CNN "P/N"
 	1    12800 6700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12800 6550 12800 6500
-Connection ~ 12800 6500
+	12800 6150 12800 6100
+$Comp
+L Device:C C7
+U 1 1 5D377B4E
+P 12800 6300
+F 0 "C7" H 12915 6346 50  0000 L CNN
+F 1 "0.1u" H 12915 6255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 12838 6150 50  0001 C CNN
+F 3 "" H 12800 6300 50  0001 C CNN
+F 4 "Vishay  K104K15X7RF5TL2" H 12800 6300 50  0001 C CNN "P/N"
+	1    12800 6300
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
 	12800 6850 12800 6900
 Wire Wire Line
@@ -159,9 +137,9 @@ F 3 "" H 14600 6850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14600 6850 14600 6800
-Text Label 12200 6900 0    50   ~ 0
-R_SECD_PIN
 Text Label 12200 6100 0    50   ~ 0
+R_SECD_PIN
+Text Label 12200 6900 0    50   ~ 0
 R_MAIN_PIN
 Wire Wire Line
 	12200 6100 12800 6100
@@ -1380,4 +1358,16 @@ Text Notes 2100 2400 0    50   ~ 0
 To 24VDC, 3A supply.
 Text Notes 10500 2950 0    50   ~ 0
 C5 might be redundant.
+Text Notes 13350 6700 0    50   ~ 0
+(R?)
+Text Notes 13350 6400 0    50   ~ 0
+(L?)
+Wire Wire Line
+	12800 6450 12800 6500
+Wire Wire Line
+	13100 6500 12800 6500
+Connection ~ 13100 6500
+Connection ~ 12800 6500
+Wire Wire Line
+	12800 6500 12800 6550
 $EndSCHEMATC

@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Arduino_Nano_v3.x
+D Arduino Nano v3.x
+K Arduino nano microcontroller module USB
+F https://store.arduino.cc/usa/arduino-nano
+$ENDCMP
+#
+$CMP LM2596_regulator_module
+D LM2596 adjustable regulated step-down module, DC-DC converter
+K LM2596 DC-DC
+F https://www.ebay.com/itm/LM2596S-DC-DC-3A-Buck-Adjustable-Step-down-Power-Supply-Converter-Module-Arduino/382552225398?hash=item5911e3b676:g:yccAAOSwZOBbhWUL
+$ENDCMP
+#
+#End Doc Library

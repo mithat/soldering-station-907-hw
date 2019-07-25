@@ -5,7 +5,7 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "Soldering station 907"
+Title "Soldering Station 907"
 Date "2019-07-24"
 Rev "v0.0.1"
 Comp "Mithat Konar"
@@ -25,7 +25,7 @@ F 1 "Arduino_Nano_v3.x" H 9550 3300 50  0000 C CNN
 F 2 "Module:Arduino_Nano_WithMountingHoles" H 10150 3400 50  0001 L CNN
 F 3 "https://store.arduino.cc/usa/arduino-nano" H 10000 3350 50  0001 C CNN
 F 4 "Any Arduino Nano v3.x" H 10000 4350 50  0001 C CNN "P/N"
-F 5 "This is a lie: Mount on 2x Sullins PPPC201LFBN-RC" H 10000 4350 50  0001 C CNN "Comments"
+F 5 "Mount on 2x Sullins PPPC151LFBN-RC" H 10000 4350 50  0001 C CNN "Comments"
 	1    10000 4350
 	1    0    0    -1  
 $EndComp
@@ -1378,4 +1378,6 @@ Text Notes 2100 6150 0    50   ~ 0
 To Hakko 907 handle\nor equivalent.
 Text Notes 2100 2400 0    50   ~ 0
 To 24VDC, 3A supply.
+Text Notes 10500 2950 0    50   ~ 0
+C5 might be redundant.
 $EndSCHEMATC

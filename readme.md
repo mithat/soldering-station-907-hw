@@ -6,7 +6,7 @@ Mithat Konar
 A PCB implementation for [sfrwmaker/soldering_907_lcd
 ](https://github.com/sfrwmaker/soldering_907_lcd) using a 1602 LCD.
 
-Note: The schematic capture for this project is complete, but the board layout has not been started. After starting this, I came to discover that the supply of decent 907-style handles has really dried up recently. So I'm likely going to leave this unfinished and instead do like all the cool kids and move to something with a T12-style handle.
+Note: After starting this, I came to discover that the supply of decent 907-style handles has really dried up. So I'm likely going to leave this unfinished and instead do like all the cool kids and move to something with a T12-style handle.
 
 ---------------------------------
 

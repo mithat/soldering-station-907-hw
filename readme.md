@@ -1,6 +1,8 @@
 Solder Station 907
 ------------------
 
+Mithat Konar
+
 A PCB implementation for [sfrwmaker/soldering_907_lcd
 ](https://github.com/sfrwmaker/soldering_907_lcd) using a 1602 LCD.
 

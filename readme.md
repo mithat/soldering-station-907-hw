@@ -1,5 +1,5 @@
-Solder Station 907
-------------------
+Soldering Station 907
+---------------------
 
 Mithat Konar
 
